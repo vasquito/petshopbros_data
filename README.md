@@ -85,11 +85,15 @@ node .\scripts\excel_to_json.js
 
 Revisá que `data/products.json` se haya generado correctamente.
 
-### 3. Revisar los cambios
+### 3. Revisar los cambios (Opcional)
 
 ```bash
 git status --short
-git diff (opcional)
+```
+
+Opcional
+```bash
+git diff
 ```
 
 ### 4. Guardar y publicar los cambios
@@ -97,13 +101,15 @@ git diff (opcional)
 Agregá los archivos que modificaste. Por ejemplo:
 
 ```bash
-git add data/products.json data/productos.csv assets/img/products/
+git add .
 ```
 
 Si también cambiaste el script u otros archivos, agregalos explícitamente. Después, creá el commit y subilo:
 
 ```bash
 git commit -m "Actualiza catálogo e imágenes"
+```
+```bash
 git push origin main
 ```
 
