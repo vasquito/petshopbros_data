@@ -56,13 +56,24 @@ cd pethshopbros_data
 
 ## Actualizar el catálogo
 
-### 1. Abrir la carpeta del repositorio
+### 1. Abrir CMD o Simbolo de Sistema
 
 En una terminal, cambiá la ruta por la ubicación local del proyecto:
 
 ```powershell
-cd "C:\ruta\al\proyecto\petshopbros_data"
+Opcion 1:
+Si estas en "C:\Users\petss", escribir dos veces "cd .." hasta llegar a "C:\"
+
+Escribir 
+cd app
+cd petshopbros_data
 ```
+
+Opcion 2:
+```
+cd C:\app\petshopbros_data
+```
+Nota: Para escribir barra invertida, ALT GR + |
 
 ### 2. Generar el JSON
 
@@ -74,11 +85,15 @@ node .\scripts\excel_to_json.js
 
 Revisá que `data/products.json` se haya generado correctamente.
 
-### 3. Revisar los cambios
+### 3. Revisar los cambios (Opcional)
 
 ```bash
 git status --short
-git diff (opcional)
+```
+
+Opcional
+```bash
+git diff
 ```
 
 ### 4. Guardar y publicar los cambios
@@ -86,13 +101,15 @@ git diff (opcional)
 Agregá los archivos que modificaste. Por ejemplo:
 
 ```bash
-git add data/products.json data/productos.csv assets/img/products/
+git add .
 ```
 
 Si también cambiaste el script u otros archivos, agregalos explícitamente. Después, creá el commit y subilo:
 
 ```bash
 git commit -m "Actualiza catálogo e imágenes"
+```
+```bash
 git push origin main
 ```
 
