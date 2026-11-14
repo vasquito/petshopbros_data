@@ -30,6 +30,56 @@ petshopbros_data/
 
 La aplicación obtiene el catálogo desde este repositorio. Así, los datos y las imágenes se pueden mantener sin modificar el código de la tienda.
 
+## Actualizar el catálogo
+
+### 1. Abrir la planilla para actualizar el contenido, guardarlo
+
+### 2. Abrir CMD o Simbolo de Sistema
+
+En una terminal, cambiá la ruta por la ubicación local del proyecto:
+
+```powershell
+cd C:\app\petshopbros_data
+```
+Nota: Para escribir barra invertida, ALT GR + |
+
+### 3. Generar el JSON
+
+Después de actualizar los datos, ejecutá:
+
+```powershell
+node .\scripts\excel_to_json.js
+```
+
+Revisá que `data/products.json` se haya generado correctamente.
+
+### 4. Revisar los cambios (Opcional)
+
+```bash
+git status --short
+```
+
+### 5. Guardar y publicar los cambios
+
+Agregá los archivos que modificaste. 
+
+```bash
+git add .
+```
+
+Después, creá el commit y subilo:
+
+```bash
+git commit -m "Actualiza catálogo e imágenes"
+```
+
+Subir al repositorio
+```bash
+git push
+```
+
+---
+
 ## Requisitos
 
 Instalá [Node.js](https://nodejs.org/) y [Git](https://git-scm.com/install/windows).
@@ -53,67 +103,6 @@ Si todavía no tenés el repositorio en tu computadora, clonalo con Git. Reempla
 git clone https://github.com/USUARIO/petshopbros_data.git
 cd pethshopbros_data
 ```
-
-## Actualizar el catálogo
-
-### 1. Abrir CMD o Simbolo de Sistema
-
-En una terminal, cambiá la ruta por la ubicación local del proyecto:
-
-```powershell
-Opcion 1:
-Si estas en "C:\Users\petss", escribir dos veces "cd .." hasta llegar a "C:\"
-
-Escribir 
-cd app
-cd petshopbros_data
-```
-
-Opcion 2:
-```
-cd C:\app\petshopbros_data
-```
-Nota: Para escribir barra invertida, ALT GR + |
-
-### 2. Generar el JSON
-
-Después de actualizar los datos, ejecutá:
-
-```powershell
-node .\scripts\excel_to_json.js
-```
-
-Revisá que `data/products.json` se haya generado correctamente.
-
-### 3. Revisar los cambios (Opcional)
-
-```bash
-git status --short
-```
-
-Opcional
-```bash
-git diff
-```
-
-### 4. Guardar y publicar los cambios
-
-Agregá los archivos que modificaste. Por ejemplo:
-
-```bash
-git add .
-```
-
-Si también cambiaste el script u otros archivos, agregalos explícitamente. Después, creá el commit y subilo:
-
-```bash
-git commit -m "Actualiza catálogo e imágenes"
-```
-```bash
-git push
-```
-
-> Si la rama principal del repositorio no se llama `main`, reemplazá ese nombre por la rama correspondiente.
 
 ## Solución de problemas
 
