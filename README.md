@@ -110,7 +110,7 @@ Si también cambiaste el script u otros archivos, agregalos explícitamente. Des
 git commit -m "Actualiza catálogo e imágenes"
 ```
 ```bash
-git push origin main
+git push
 ```
 
 > Si la rama principal del repositorio no se llama `main`, reemplazá ese nombre por la rama correspondiente.
