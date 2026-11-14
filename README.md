@@ -58,6 +58,8 @@ cd pethshopbros_data
 
 ### 1. Abrir CMD o Simbolo de Sistema
 
+En una terminal, cambiá la ruta por la ubicación local del proyecto:
+
 ```powershell
 Opcion 1:
 Si estas en "C:\Users\petss", escribir dos veces "cd .." hasta llegar a "C:\"
@@ -65,18 +67,13 @@ Si estas en "C:\Users\petss", escribir dos veces "cd .." hasta llegar a "C:\"
 Escribir 
 cd app
 cd petshopbros_data
+```
 
 Opcion 2:
+```
 cd C:\app\petshopbros_data
 ```
-
-### 2. Abrir la carpeta del repositorio
-
-En una terminal, cambiá la ruta por la ubicación local del proyecto:
-
-```powershell
-cd "C:\ruta\al\proyecto\petshopbros_data"
-```
+Nota: Para escribir barra invertida, ALT GR + |
 
 ### 2. Generar el JSON
 
