@@ -56,7 +56,21 @@ cd pethshopbros_data
 
 ## Actualizar el catálogo
 
-### 1. Abrir la carpeta del repositorio
+### 1. Abrir CMD o Simbolo de Sistema
+
+```powershell
+Opcion 1:
+Si estas en "C:\Users\petss", escribir dos veces "cd .." hasta llegar a "C:\"
+
+Escribir 
+cd app
+cd petshopbros_data
+
+Opcion 2:
+cd C:\app\petshopbros_data
+```
+
+### 2. Abrir la carpeta del repositorio
 
 En una terminal, cambiá la ruta por la ubicación local del proyecto:
 
